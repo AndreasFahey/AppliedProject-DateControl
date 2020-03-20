@@ -20,6 +20,7 @@ export class ForgotPasswordPage implements OnInit {
   ngOnInit() {
   }
 
+  // ***********Gonna come back to this**********
   sendPasswordResetEmail(email){
     this.authService.PasswordRecover(this.user.passwordResetEmail)
     .then((res) => {
