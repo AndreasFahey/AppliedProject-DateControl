@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { AuthenticationService } from "../shared/authentication-service";
-import { User } from 'firebase';
 
 @Component({
   selector: 'app-forgot-password',
@@ -10,20 +9,22 @@ import { User } from 'firebase';
 })
 export class ForgotPasswordPage implements OnInit {
 
-  user = {} as User
+  user = {
+    passwordResetEmail: 'email@example.com'
+  }
+
   constructor(
-    private authService: AuthenticationService,
-    private router: Router
-  ) {}
+    public authService: AuthenticationService,
+    public router: Router) { }
 
   ngOnInit() {
   }
 
   sendPasswordResetEmail(email){
-    this.authService.PasswordRecover(this.user.email)
+    this.authService.PasswordRecover(this.user.passwordResetEmail)
     .then((res) => {
       // Do something here
-      this.router.navigate(['home']);
+      this.router.navigate(['login']);
     }).catch((error) => {
       window.alert(error.message)
     })
