@@ -48,9 +48,9 @@ export class AuthenticationService {
     })
   }
 
-  // Recover password
-  PasswordRecover(passwordResetEmail) {
-    return this.ngFireAuth.auth.sendPasswordResetEmail(passwordResetEmail)
+   // Recover password
+   PasswordRecover(email) {
+    return this.ngFireAuth.auth.sendPasswordResetEmail(email)
     .then(() => {
       window.alert('Password reset email has been sent, please check your inbox.');
     }).catch((error) => {
@@ -69,6 +69,8 @@ export class AuthenticationService {
     const user = JSON.parse(localStorage.getItem('user'));
     return (user.emailVerified !== false) ? true : false;
   }
+
+  
 
   // Sign in with Gmail
   GoogleAuth() {
