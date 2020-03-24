@@ -60,6 +60,10 @@ const routes: Routes = [
   {
     path: 'cereal-muesli',
     loadChildren: () => import('./cereal-muesli/cereal-muesli.module').then( m => m.CerealMuesliPageModule)
+  },
+  {
+    path: 'medicines',
+    loadChildren: () => import('./medicines/medicines.module').then( m => m.MedicinesPageModule)
   }
 ];
 
