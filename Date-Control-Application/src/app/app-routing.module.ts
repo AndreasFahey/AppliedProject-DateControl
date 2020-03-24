@@ -36,6 +36,10 @@ const routes: Routes = [
   {
     path: 'confectionery-crisps',
     loadChildren: () => import('./confectionery-crisps/confectionery-crisps.module').then( m => m.ConfectioneryCrispsPageModule)
+  },
+  {
+    path: 'minerals',
+    loadChildren: () => import('./minerals/minerals.module').then( m => m.MineralsPageModule)
   }
 ];
 
