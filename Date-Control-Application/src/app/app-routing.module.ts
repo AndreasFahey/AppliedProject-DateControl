@@ -48,6 +48,10 @@ const routes: Routes = [
   {
     path: 'deli-stock',
     loadChildren: () => import('./deli-stock/deli-stock.module').then( m => m.DeliStockPageModule)
+  },
+  {
+    path: 'meats',
+    loadChildren: () => import('./meats/meats.module').then( m => m.MeatsPageModule)
   }
 ];
 
