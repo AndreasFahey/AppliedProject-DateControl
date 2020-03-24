@@ -44,6 +44,10 @@ const routes: Routes = [
   {
     path: 'biscuits-cakes',
     loadChildren: () => import('./biscuits-cakes/biscuits-cakes.module').then( m => m.BiscuitsCakesPageModule)
+  },
+  {
+    path: 'deli-stock',
+    loadChildren: () => import('./deli-stock/deli-stock.module').then( m => m.DeliStockPageModule)
   }
 ];
 
