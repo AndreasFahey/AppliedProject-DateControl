@@ -56,6 +56,10 @@ const routes: Routes = [
   {
     path: 'dairy',
     loadChildren: () => import('./dairy/dairy.module').then( m => m.DairyPageModule)
+  },
+  {
+    path: 'cereal-muesli',
+    loadChildren: () => import('./cereal-muesli/cereal-muesli.module').then( m => m.CerealMuesliPageModule)
   }
 ];
 
