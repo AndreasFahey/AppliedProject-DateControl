@@ -68,6 +68,10 @@ const routes: Routes = [
   {
     path: 'frozen',
     loadChildren: () => import('./frozen/frozen.module').then( m => m.FrozenPageModule)
+  },
+  {
+    path: 'misc-other',
+    loadChildren: () => import('./misc-other/misc-other.module').then( m => m.MiscOtherPageModule)
   }
 ];
 
