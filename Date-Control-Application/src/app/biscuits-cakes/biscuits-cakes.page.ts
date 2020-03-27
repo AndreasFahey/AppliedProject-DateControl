@@ -12,7 +12,7 @@ export class BiscuitsCakesPage implements OnInit {
   bcForm: FormGroup;
 
   constructor(
-    bcService: BiscuitsCakesService,
+    private bcService: BiscuitsCakesService,
     private router: Router,
     public fb: FormBuilder
   ) { }
@@ -27,4 +27,16 @@ export class BiscuitsCakesPage implements OnInit {
     })
   }
 
+  formsSubmit(){
+    if (!this.bcForm.valid) {
+      return false;
+    } else {
+      this.bcService.enterBcDetails(this.bcForm.value).then(res => {
+        console.log(res)
+        this.bcForm.reset();
+        this.router.navigate(['/home']);
+      })
+        .catch(error => console.log(error));
+    }
+  }
 }
