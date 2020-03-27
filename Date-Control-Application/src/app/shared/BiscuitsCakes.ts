@@ -1,4 +1,4 @@
-export class Appointment {
+export class BiscuitsCakes {
     brand: string;
     description: string;
     barcode: number
