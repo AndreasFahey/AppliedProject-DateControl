@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BiscuitsCakes } from '../shared/BiscuitsCakes';
+import { BiscuitsCakes } from './BiscuitsCakes';
 import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 
 @Injectable({

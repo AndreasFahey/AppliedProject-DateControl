@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder } from "@angular/forms";
-import { BiscuitsCakesService } from './../shared/biscuits-cakes.service';
-import { BiscuitsCakes } from '../shared/BiscuitsCakes';
+import { BiscuitsCakesService } from '../shared/Biscuits-Cakes/biscuits-cakes.service';
+import { BiscuitsCakes } from '../shared/Biscuits-Cakes/BiscuitsCakes';
 
 @Component({
   selector: 'app-biscuits-cakes',
