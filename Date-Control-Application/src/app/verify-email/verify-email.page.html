@@ -25,6 +25,7 @@
       <ion-button type="submit" (click)="authService.SendVerificationMail()" expand="block">
         Resend Verification Email
       </ion-button>
+      <ion-button [routerLink]="['/home']" expand="block" color="tertiary">Return Home and Sign In Once Verified</ion-button>
     </ion-row>
   </ion-grid>
 </ion-content>

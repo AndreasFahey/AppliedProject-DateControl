@@ -1,8 +1,5 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
     <ion-img src="..\assets\icon\AF-Date-Control.png"></ion-img>
   </ion-toolbar>
 </ion-header>
@@ -21,13 +18,19 @@
 
     <ion-row>
       <ion-col> 
-      <ion-button type="submit" (click)="logIn(email, password)" expand="block">Login</ion-button>
+      <ion-button type="submit" (click)="logIn(email, password)" expand="block" color="success">Login</ion-button>
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col> 
         <ion-button [routerLink]="['/forgot-password']" expand="block" color="danger">Forgot Password ?</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> 
+        <ion-button [routerLink]="['/home']" expand="block" color="medium">Return Home</ion-button>
       </ion-col>
     </ion-row>
 
