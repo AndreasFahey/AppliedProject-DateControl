@@ -53,4 +53,11 @@
     <h3>Quantity: {{bc.quantity}}</h3>
     <h3>Before Date: {{bc.bbdate}}</h3>
   </ion-label>
+
+  <div class="item-note" item-end>
+    <button ion-button clear (click)="deleteBcProduct(bc.$key)">
+      <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+    </button>
+  </div>
+
 </ion-item>
