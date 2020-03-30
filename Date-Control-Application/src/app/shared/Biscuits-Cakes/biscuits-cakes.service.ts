@@ -39,9 +39,7 @@ bcRef: AngularFireObject<any>;
     return this.bcRef.update({
       brand: bc.brand,
       description: bc.description,
-      barcode: bc.barcode,
-      quantity: bc.quantity,
-      bbdate: bc.bbdate
+      quantity: bc.quantity
     })
   }
 
