@@ -72,6 +72,46 @@ const routes: Routes = [
   {
     path: 'misc-other',
     loadChildren: () => import('./misc-other/misc-other.module').then( m => m.MiscOtherPageModule)
+  },
+  {
+    path: 'update-bc',
+    loadChildren: () => import('./update-pages/update-bc/update-bc.module').then( m => m.UpdateBcPageModule)
+  },
+  {
+    path: 'update-cm',
+    loadChildren: () => import('./update-pages/update-cm/update-cm.module').then( m => m.UpdateCmPageModule)
+  },
+  {
+    path: 'update-cc',
+    loadChildren: () => import('./update-pages/update-cc/update-cc.module').then( m => m.UpdateCcPageModule)
+  },
+  {
+    path: 'update-dairy',
+    loadChildren: () => import('./update-pages/update-dairy/update-dairy.module').then( m => m.UpdateDairyPageModule)
+  },
+  {
+    path: 'update-ds',
+    loadChildren: () => import('./update-pages/update-ds/update-ds.module').then( m => m.UpdateDsPageModule)
+  },
+  {
+    path: 'update-frozen',
+    loadChildren: () => import('./update-pages/update-frozen/update-frozen.module').then( m => m.UpdateFrozenPageModule)
+  },
+  {
+    path: 'update-meats',
+    loadChildren: () => import('./update-pages/update-meats/update-meats.module').then( m => m.UpdateMeatsPageModule)
+  },
+  {
+    path: 'update-med',
+    loadChildren: () => import('./update-pages/update-med/update-med.module').then( m => m.UpdateMedPageModule)
+  },
+  {
+    path: 'update-minerals',
+    loadChildren: () => import('./update-pages/update-minerals/update-minerals.module').then( m => m.UpdateMineralsPageModule)
+  },
+  {
+    path: 'update-misc',
+    loadChildren: () => import('./update-pages/update-misc/update-misc.module').then( m => m.UpdateMiscPageModule)
   }
 ];
 
