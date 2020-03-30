@@ -1,9 +1,48 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>biscuits-cakes</ion-title>
+    <ion-title>Biscuits and Cakes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-list lines="full">
+    <form [formGroup]="bcForm" (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-label position="floating">Brand</ion-label>
+        <ion-input formControlName="brand" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-input formControlName="description" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Barcode</ion-label>
+        <ion-input formControlName="barcode" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ouantity</ion-label>
+        <ion-input formControlName="quantity" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Best Before Date</ion-label>
+        <ion-input formControlName="bbdate" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Add Product</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
 
 </ion-content>

@@ -34,7 +34,7 @@ export class BiscuitsCakesPage implements OnInit {
       this.bcService.enterBcDetails(this.bcForm.value).then(res => {
         console.log(res)
         this.bcForm.reset();
-        this.router.navigate(['/home']);
+        //this.router.navigate(['/biscuits-cakes']);
       })
         .catch(error => console.log(error));
     }
