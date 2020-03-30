@@ -21,13 +21,13 @@
 
       <ion-item>
         <ion-label position="floating">Barcode</ion-label>
-        <ion-input formControlName="barcode" type="text" required>
+        <ion-input formControlName="barcode" type="number" required>
         </ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Ouantity</ion-label>
-        <ion-input formControlName="quantity" type="text" required>
+        <ion-input formControlName="quantity" type="number" required>
         </ion-input>
       </ion-item>
 
@@ -46,3 +46,11 @@
   </ion-list>
 
 </ion-content>
+
+<ion-item *ngFor="let bc of Listings" class="user-list">
+  <ion-label>
+    <h3>Product : {{bc.brand}} {{bc.description}}</h3>
+    <h3>Quantity: {{bc.quantity}}</h3>
+    <h3>Before Date: {{bc.bbdate}}</h3>
+  </ion-label>
+</ion-item>
