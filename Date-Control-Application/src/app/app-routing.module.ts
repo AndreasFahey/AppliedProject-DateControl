@@ -74,7 +74,7 @@ const routes: Routes = [
     loadChildren: () => import('./misc-other/misc-other.module').then( m => m.MiscOtherPageModule)
   },
   {
-    path: 'update-bc',
+    path: 'update-bc/:id',
     loadChildren: () => import('./update-pages/update-bc/update-bc.module').then( m => m.UpdateBcPageModule)
   },
   {

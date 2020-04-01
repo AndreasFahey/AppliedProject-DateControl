@@ -5,6 +5,7 @@ import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angula
 @Injectable({
   providedIn: 'root'
 })
+
 export class BiscuitsCakesService {
 bcListRef: AngularFireList<any>;
 bcRef: AngularFireObject<any>;
@@ -50,6 +51,4 @@ bcRef: AngularFireObject<any>;
     this.bcRef = this.db.object('/biscuits-cakes/' + id);
     this.bcRef.remove();
   }
-
-
 }

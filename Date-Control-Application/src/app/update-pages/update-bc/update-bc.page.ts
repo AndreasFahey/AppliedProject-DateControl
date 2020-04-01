@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { FormGroup, FormBuilder } from "@angular/forms";
-
-
 import { BiscuitsCakesService } from '../../shared/Biscuits-Cakes/biscuits-cakes.service';
 
 @Component({
@@ -19,13 +17,20 @@ export class UpdateBcPage implements OnInit {
     private actRoute: ActivatedRoute,
     private router: Router,
     public fb: FormBuilder
-  ) { }
+  ) { 
+    this.id = this.actRoute.snapshot.paramMap.get('id');
+    this.bcService.getBcDetails(this.id).valueChanges().subscribe(res => {
+      this.updateBcForm.setValue(res);
+    });
+  }
 
   ngOnInit() {
     this.updateBcForm = this.fb.group({
       brand: [''],
       description: [''],
-      quantity: ['']
+      barcode:[''],
+      quantity: [''],
+      bbdate: ['']
     })
     console.log(this.updateBcForm.value)
   }
