@@ -4,5 +4,5 @@ export class BiscuitsCakes {
     description: string;
     barcode: number
     quantity: number
-    bbdate: number;
+    bbdate: Date;
 }
