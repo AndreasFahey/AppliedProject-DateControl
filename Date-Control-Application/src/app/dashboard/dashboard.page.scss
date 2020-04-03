@@ -4,3 +4,91 @@ ion-img{
     margin: auto;
     display: block;
 }
+
+ion-content.background{
+    --background: url(../../assets/icon/DashBoardBackground.jpg) 0 0/100% 100% no-repeat;
+}
+
+.dairy{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.deli{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.meats{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.bc{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+
+.cc{
+    width: 27%;
+    margin: auto;
+    display: block;
+}
+
+.minerals{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+
+.meds{
+    width: 18%;
+    margin: auto;
+    display: block;
+}
+
+.cm{
+    width: 47%;
+    margin: auto;
+    display: block;
+}
+
+.frozen{
+    width: 46%;
+    margin: auto;
+    display: block;
+}
+
+.misc{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+h2{
+    color: crimson;
+}
+
+h3{
+    color: orange;
+}
+
+h4{
+    color: green;
+}
+
+.red{
+    color: crimson;
+}
+
+.orange{
+    color: orange;
+}
+
+.green{
+    color: green;
+}

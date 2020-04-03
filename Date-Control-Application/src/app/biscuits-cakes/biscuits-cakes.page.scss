@@ -1,5 +1,29 @@
-.user-list h3{
+.user-list h2{
     margin-right: 4px;
     position: relative;
     top: 1px;
+    color: darkblue;
+}
+
+ion-img{
+    width: 5%;
+    height: 5%;
+    margin: auto;
+    display: block;
+}
+
+h1{
+    color: blue;
+}
+
+.updateBtn{
+    color: cyan;
+}
+
+.deleteBtn{
+    color: crimson;
+}
+
+p{
+    color: grey;
 }
