@@ -78,39 +78,39 @@ const routes: Routes = [
     loadChildren: () => import('./update-pages/update-bc/update-bc.module').then( m => m.UpdateBcPageModule)
   },
   {
-    path: 'update-cm',
+    path: 'update-cm/:id',
     loadChildren: () => import('./update-pages/update-cm/update-cm.module').then( m => m.UpdateCmPageModule)
   },
   {
-    path: 'update-cc',
+    path: 'update-cc/:id',
     loadChildren: () => import('./update-pages/update-cc/update-cc.module').then( m => m.UpdateCcPageModule)
   },
   {
-    path: 'update-dairy',
+    path: 'update-dairy/:id',
     loadChildren: () => import('./update-pages/update-dairy/update-dairy.module').then( m => m.UpdateDairyPageModule)
   },
   {
-    path: 'update-ds',
+    path: 'update-ds/:id',
     loadChildren: () => import('./update-pages/update-ds/update-ds.module').then( m => m.UpdateDsPageModule)
   },
   {
-    path: 'update-frozen',
+    path: 'update-frozen/:id',
     loadChildren: () => import('./update-pages/update-frozen/update-frozen.module').then( m => m.UpdateFrozenPageModule)
   },
   {
-    path: 'update-meats',
+    path: 'update-meats/:id',
     loadChildren: () => import('./update-pages/update-meats/update-meats.module').then( m => m.UpdateMeatsPageModule)
   },
   {
-    path: 'update-med',
+    path: 'update-med/:id',
     loadChildren: () => import('./update-pages/update-med/update-med.module').then( m => m.UpdateMedPageModule)
   },
   {
-    path: 'update-minerals',
+    path: 'update-minerals/:id',
     loadChildren: () => import('./update-pages/update-minerals/update-minerals.module').then( m => m.UpdateMineralsPageModule)
   },
   {
-    path: 'update-misc',
+    path: 'update-misc/:id',
     loadChildren: () => import('./update-pages/update-misc/update-misc.module').then( m => m.UpdateMiscPageModule)
   }
 ];
