@@ -50,5 +50,4 @@ meRef: AngularFireObject<any>;
     this.meRef = this.db.object('/meats/' + id);
     this.meRef.remove();
   }
-
 }
