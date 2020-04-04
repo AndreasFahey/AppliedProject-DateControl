@@ -11,7 +11,7 @@ ccRef: AngularFireObject<any>;
 
   constructor(private db: AngularFireDatabase) { }
 
-  // Enter Product Deatils
+  // Enter Product Details
   enterCcDetails(cc: ConfecCrisps) {
     return this.ccListRef.push({
       brand: cc.brand,
@@ -34,7 +34,7 @@ ccRef: AngularFireObject<any>;
     return this.ccListRef;
   }
 
-  // Update Deatils - If you delete some etc
+  // Update Details - If you delete some etc
   updateCcDetails(id, cc:ConfecCrisps){
     return this.ccRef.update({
       brand: cc.brand,

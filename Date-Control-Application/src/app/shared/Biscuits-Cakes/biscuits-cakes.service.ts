@@ -12,7 +12,7 @@ bcRef: AngularFireObject<any>;
 
   constructor(private db: AngularFireDatabase) { }
 
-  // Enter Product Deatils
+  // Enter Product Details
   enterBcDetails(bc: BiscuitsCakes) {
     return this.bcListRef.push({
       brand: bc.brand,
@@ -35,7 +35,7 @@ bcRef: AngularFireObject<any>;
     return this.bcListRef;
   }
 
-  // Update Deatils - If you delete some etc
+  // Update Details - If you delete some etc
   updateBcDetails(id, bc:BiscuitsCakes){
     return this.bcRef.update({
       brand: bc.brand,

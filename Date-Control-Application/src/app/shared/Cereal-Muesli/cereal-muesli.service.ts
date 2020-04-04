@@ -11,7 +11,7 @@ cmRef: AngularFireObject<any>;
 
   constructor(private db: AngularFireDatabase) { }
 
-  // Enter Product Deatils
+  // Enter Product Details
   enterCmDetails(cm: CerealMuesli) {
     return this.cmListRef.push({
       brand: cm.brand,
@@ -34,7 +34,7 @@ cmRef: AngularFireObject<any>;
     return this.cmListRef;
   }
 
-  // Update Deatils - If you delete some etc
+  // Update Details - If you delete some etc
   updateCmDetails(id, cm:CerealMuesli){
     return this.cmRef.update({
       brand: cm.brand,
