@@ -1,9 +1,59 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cereal-muesli</ion-title>
+    <ion-row>
+      <ion-button [routerLink]="['/dashboard']" expand="block" color="dark">Go Back</ion-button>
+      <ion-img src="..\assets\icon\AF-Date-Control.png"></ion-img>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+  <ion-list lines="full">
+    <h1>Enter Product Details From Cereal and Muesli Sections:</h1>
+    <form [formGroup]="cmForm" (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-input formControlName="brand" type="text" placeholder="Enter Brand Name:" required></ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-input formControlName="description" type="text" placeholder="Enter Product Description:" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input formControlName="barcode" type="number" placeholder="Enter Barcode:"required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input formControlName="quantity" type="number" placeholder="Enter Quantity:" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <p>Enter Best Before Date:</p>
+        <ion-input formControlName="bbdate" type="Date" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-row>
+          <ion-button type="submit" color="success" shape="full" expand="block">Add Product</ion-button>
+      </ion-row>
+    </form>
+  </ion-list>
+
+<ion-content>
+  <ion-item *ngFor="let cm of Listings" class="user-list">
+    <ion-label>
+      <h2>Product : {{cm.brand}} {{cm.description}} | Qty: {{cm.quantity}} | BB Date: {{cm.bbdate}}</h2>
+    </ion-label>
+
+  <div class="item-note" item-end>
+    <button ion-button clear [routerLink]="['/update-cm/', bc.$key]">
+      <ion-icon class="updateBtn" name="create" style="zoom:2.0"></ion-icon>
+    </button>
+    <button ion-button clear (click)="deleteCmProduct(bc.$key)">
+      <ion-icon class="deleteBtn" name="trash" style="zoom:2.0"></ion-icon>
+    </button>
+  </div>
+  </ion-item>
 </ion-content>
