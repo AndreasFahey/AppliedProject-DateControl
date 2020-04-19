@@ -48,10 +48,10 @@
     </ion-label>
 
   <div class="item-note" item-end>
-    <button ion-button clear [routerLink]="['/update-cm/', bc.$key]">
+    <button ion-button clear [routerLink]="['/update-cm/', cm.$key]">
       <ion-icon class="updateBtn" name="create" style="zoom:2.0"></ion-icon>
     </button>
-    <button ion-button clear (click)="deleteCmProduct(bc.$key)">
+    <button ion-button clear (click)="deleteCmProduct(cm.$key)">
       <ion-icon class="deleteBtn" name="trash" style="zoom:2.0"></ion-icon>
     </button>
   </div>
