@@ -1,17 +1,100 @@
 \chapter{Technology Review}
 
-\subsection{The Why}
+\subsection{The How and Why}
+\begin{figure}[h!]
+	\caption{Quotation From: https://www.brainyquote.com/}
+	\label{image:quote1}
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/quote1.PNG}
+\end{figure}
+With new ideas comes an influx of questions, the main two being the how and the why. How this idea came about ? this idea came about after five years of working part-time in retail. Looking at the day to day operations of the shop and what can i try and improve with what i have learned in college for four years, in this case i highlighted one area of the shop that i could integrate into my final year project and that is to develop an application to ease the burden of Date Checking for my fellow staff members. The human eye cannot spot everything, this would save time and money for the staff and shop as a whole respectively. The good thing also about this idea is the fact that it can be very flexible and can be made into various different types of applications with minor tweaks. This is a major characteristic that companies and retailers demand, versatility. It can help in many different ways. %more
 
 \subsection{Beneficial and Sufficient}
+Before pursuing a Date Control Application for Retail i wanted to know would it be benefiicial to staff members and superiors in the workplace. I conducted a minor survey enclosed within my workplace to get some feedback for this potential idea. Which i will show the results in the Surveys section below. %more
 
 \subsection{Surveys}
 
 \subsection{Planning Project}
 
 \subsection{Technologies}
+The Technologies i used to develop my idea were as follows:
+\newline
 
-\subsection{Project References}
+\begin{figure}[h!]
+	\caption{Developed the code in Visual Studio Code.}
+	\label{image:vscode}
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/vscode.png}
+\end{figure}
+
+- Visual Studio Code - The IDE of my choice for coding the project.
+\newline
+
+\begin{figure}[h!]
+	\caption{Programming Language of My choosing for SD.}
+	\label{image:ionic}
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/ionic.png}
+\end{figure}
+Ionic - The programming language in which i coded my project. For  the four years of software development course in GMIT i studied various different languages such as Java, C++, C, C Sharp, Python, Ruby and many more. I initially decided to got with using Angular as my programming language for my final year project, however it was giving me various issues and i didn't like the way it was turning out so i decided to code this project using the ionic programming language framework.
+\newline
+
+Ionic enables you to develop applications using web technologies and languages like HTML, CSS, JavaScript, Angular, and TypeScript. Consider Ionic as a front-end software development kit (SDK) for creating a blend of applications. Ionic provides a collection of components that imitate the native look, feel and functionality of each platform, mainly known for mobile applications but also considered for web applications also, the flexibility of Ionic Framework is why i made the decision to switch and the fact that in my opinion it suits what i in-visioned when sketching the pages i wanted and how they look for the user. Examples of these components include buttons, tabs, menus, lists, cards, modals, and so on. However for colors it is not so broad, but they suited what i was trying to implement. At the end of the day this application was not created to look pretty it was created to solve a problem in the work place, a Date Control Problem.
+\newline
+
+Out of the four years of studying software development, Ionic and Angular stood out. In my second year of study in GMIT i encountered the Angular Framework, and in third year i encountered the Ionic Framework. When coming up with the idea of creating my Date Control application i wanted to use a language i liked and enjoyed doing. In third year for the group project myself and another student created a cinema booking website using Ionic Firebase. From then i knew i wanted to use Firebase for its easy implementation into the Ionic Framework for an application. As i always want to learn something new, although similar Ionic and Angular are different, as mentioned above i initially started the project in Angular and then switched to Ionic. I did this as i did not feel as comfortable with Angular Firebase as i did with Ionic Firebase. I'm glad i made the switch for a number of reasons including software development, overall design and it's link to the Firebase DB Cloud.
+\newline
+
+\begin{figure}[h!]
+	\caption{Cloud Database of My choosing for Data Storage.}
+	\label{image:fire-base}
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/fire-base.png}
+\end{figure}
+
+- Firebase - The Cloud Database i used to store User Authentication details and store the product entry data for crud functionality. Note for private and security purposes i the admin of the Firebase database cannot see what the users passwords are, firebase hash them in which i or anyone else does not know.
+\newline
+
+\begin{figure}[h!]
+	\caption{All Project Items are on GitHub and can be cloned.}
+	\label{image:github}
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/github.png}
+\end{figure}
+
+- GitHub - I used to publish my project on the internet for the thesis and for people to then test themselves. GitHub gives a brief description of the project as a whole and explains to the person wishing to test how to run or try out the application. 
+\newline
+
+\begin{figure}[h!]
+	\caption{This project dissertation was edited on Overleaf in LaTex.}
+	\label{image:overleaf-latex}
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/overleaf-latex.png}
+\end{figure}
+
+- Overleaf - I am using overleaf as a Latex editor for this project dissertation. I used this template provided to us from our year head.
 
 \subsection{Issues}
 
-\subsection{Other}
+\begin{figure}[h!]
+	\caption{In Every Project or Idea Issues arise.}
+	\label{image:issues}
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/issues.jpg}
+\end{figure}
+
+In every project or idea issues can very easily arise. During the software development you may encounter issues such as compile errors, server errors, and maybe some code implemented that worked on older versions of software, for example, some functions or declarations that work on Ionic 2 wont work on Ionic 5 and so on. HTML issues such as buttons not working, pages not showing due to an error in the code and so on. Issues can very easily arise in any software projects, in fact make that any project whatsoever. In this section i will be discussing the issues that arose for me during the software development part of the project. 
+\newline
+
+The first issue arose when i decided to pursue the Date Control Application in Angular Firebase. Having done Ionic Firebase in Third Year for the group project i wanted to challenge myself in trying out Angular with Firebase. Having set up the authentication with Angular Firebase i didn't like the way it was looking and what it was going to look like when implementing the CRUD functionality to the application.
+\newline
+
+I then realised that i wanted to pursue this project in Ionic. I made the switch which you can see in the early commits of the software development of the project. I made the switch of course for the reasons mentioned, however i also switched due to the fact i was familiar with Ionic Firebase having completing a project in it before. I liked the look overall of Ionic. This did not hinder me to much in the completion of this application. At that stage i was at the stage of testing the waters, what will and won't work and how it will look in the end. This wasn't a major issue and i was glad i made the switch. 
+\newline
+
+The Next issue that arose was the authentication "reset/forgot" password. %work in progress
+\newline
+
+Another issue that stood out was the sorting issue. I wanted to sort the data read into the Firebase Cloud Database to be loaded into the food groups pages with the best before date closest to the current date to be at the top of the list. %work in progress
+
+\subsection{Project References}
