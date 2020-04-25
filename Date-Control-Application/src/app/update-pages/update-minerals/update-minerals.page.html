@@ -1,9 +1,60 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>update-minerals</ion-title>
+    <ion-title>
+      Update Minerals Details
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="updateMinForm" (ngSubmit)="updateForm()">
 
+      <ion-item>
+        <ion-label position="floating">Brand</ion-label>
+        <ion-input formControlName="brand" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-input formControlName="description" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Barcode</ion-label>
+        <ion-input formControlName="barcode" type="number" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ouantity</ion-label>
+        <ion-input formControlName="quantity" type="number" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Best Before Date</ion-label>
+        <ion-input formControlName="bbdate" type="Date" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="success" shape="full" expand="block">Update</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/minerals']" expand="block" color="dark">Go Back</ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </ion-list>
 </ion-content>
+
+
+
+
