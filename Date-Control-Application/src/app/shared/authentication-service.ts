@@ -48,17 +48,18 @@ export class AuthenticationService {
     })
   }
 
-   // Recover password
-  PasswordRecover(passwordResetEmail) {
-    return this.ngFireAuth.auth.sendPasswordResetEmail(passwordResetEmail)
+   // Password Reset -- ***Not Working***
+  PasswordReset(email) {
+    return this.ngFireAuth.auth.sendPasswordResetEmail(email)
     .then(() => {
       window.alert('Password reset email has been sent, please check your inbox.');
+      this.router.navigate(['home'])
     }).catch((error) => {
       window.alert(error)
     })
   }
-
-  // Returns true when user is looged in
+  
+  // Returns true when user is logged in
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     return (user !== null && user.emailVerified !== false) ? true : false;
@@ -89,8 +90,6 @@ export class AuthenticationService {
     const userData: User = {
       uid: user.uid,
       email: user.email,
-      displayName: user.displayName,
-      photoURL: user.photoURL,
       emailVerified: user.emailVerified
     }
     return userRef.set(userData, {

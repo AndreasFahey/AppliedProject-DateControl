@@ -9,10 +9,6 @@ import { AuthenticationService } from "../shared/authentication-service";
 })
 export class ForgotPasswordPage implements OnInit {
 
-  user = {
-    passwordResetEmail: 'email@example.com'
-  }
-
   constructor(
     public authService: AuthenticationService,
     public router: Router) { }
@@ -20,9 +16,9 @@ export class ForgotPasswordPage implements OnInit {
   ngOnInit() {
   }
 
-  // ***********Gonna come back to this**********
+  // ***********Not Working**********
   sendPasswordResetEmail(email){
-    this.authService.PasswordRecover(this.user.passwordResetEmail)
+    this.authService.PasswordReset(email)
     .then((res) => {
       // Do something here
       this.router.navigate(['login']);
