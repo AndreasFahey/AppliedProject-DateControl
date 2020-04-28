@@ -18,7 +18,14 @@
 
     <ion-row>
       <ion-col> 
-      <ion-button type="submit" (click)="logIn(email, password)" expand="block" color="success">Login</ion-button>
+      <ion-button type="submit" (click)="logIn(email, password)" shape="round" color="success">Log In</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> 
+        <p>Don't Have An Account ? </p>
+      <ion-button [routerLink]="['/registration']" shape="round" color="primary">Register</ion-button>
       </ion-col>
     </ion-row>
 
@@ -32,7 +39,9 @@
 
     <ion-row>
       <ion-col> 
-        <ion-button [routerLink]="['/home']" expand="block" color="medium">Return Home</ion-button>
+        <ion-button [routerLink]="['/home']" shape="round" color="dark">
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
 

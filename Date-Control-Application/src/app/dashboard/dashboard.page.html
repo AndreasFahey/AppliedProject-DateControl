@@ -7,15 +7,15 @@
 </ion-header>
 
 <ion-row>
-  <ion-button type="submit" (click)="authService.SignOut()"  expand="block" color="dark">Logout Staff Member</ion-button>
+  <ion-button type="submit" (click)="authService.SignOut()" expand="block" color="dark">Log Out
+    <ion-icon name="log-out-outline"></ion-icon>
+  </ion-button>
 </ion-row>
 
 <ion-row>
-  <p class="red">Red Food Groups: Short Dated</p>
-  <p>---</p>
-  <p class="orange">Orange Food Groups: Short Dated</p>
-  <p>---</p>
-  <p class="green">Green Food Groups: Short Dated</p>
+  <p class="red">Red Food Groups: Short Dated &nbsp;&nbsp;</p>
+  <p class="orange">&nbsp;Orange Food Groups: Semi-Long Dated&nbsp;&nbsp;</p>
+  <p class="green">&nbsp;Green Food Groups: Long Dated&nbsp;&nbsp;</p>
 </ion-row>
 
 <ion-content padding class = "background">
@@ -24,31 +24,51 @@
     <ion-col></ion-col>
 
     <ion-row>
-        <ion-button [routerLink]="['/dairy']" expand="block" class="dairy" color="danger" size="large">Dairy Products</ion-button>
-        <ion-button [routerLink]="['/deli-stock']" expand="block" class="deli" color="danger" size="large">Deli Stock</ion-button>
-        <ion-button [routerLink]="['/meats']" expand="block" class="meats" color="danger" size="large">Meats</ion-button>
+        <ion-button [routerLink]="['/dairy']"  class="dairy" color="danger" size="large">Dairy Products
+          <ion-icon name="color-fill-outline"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/deli-stock']" expand="block" class="deli" color="danger" size="large">Deli Stock
+          <ion-icon name="restaurant-outline"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/meats']" expand="block" class="meats" color="danger" size="large">Meats
+          <ion-icon name="fast-food-outline"></ion-icon>
+        </ion-button>
     </ion-row>
 
     <ion-col></ion-col>
 
    <ion-row>
-        <ion-button [routerLink]="['/biscuits-cakes']" expand="block" class="bc" color="warning" size="large">Biscuits and Cakes</ion-button>
-        <ion-button [routerLink]="['/confectionery-crisps']" expand="block" class="cc" color="warning" size="large">Confectionery and Crisps</ion-button>
-        <ion-button [routerLink]="['/minerals']" expand="block" class="minerals" color="warning" size="large">Minerals</ion-button>
-        <ion-button [routerLink]="['/medicines']" expand="block" class="meds" color="warning" size="large">Medicines</ion-button>
+        <ion-button [routerLink]="['/biscuits-cakes']" expand="block" class="bc" color="warning" size="large">Biscuits & Cakes
+          <ion-icon name="pie-chart-outline"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/confectionery-crisps']" expand="block" class="cc" color="warning" size="large">Confectionary & Crisps
+          <ion-icon name="pin-outline"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/minerals']" expand="block" class="minerals" color="warning" size="large">Minerals
+          <ion-icon name="wine-outline"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/medicines']" expand="block" class="meds" color="warning" size="large">Medicines
+          <ion-icon name="bandage-outline"></ion-icon>
+        </ion-button>
     </ion-row>
 
     <ion-col></ion-col>
 
     <ion-row>
-        <ion-button [routerLink]="['/cereal-muesli']" expand="block" class="cm" color="success" size="large">Cereal/Muesli</ion-button>
-        <ion-button [routerLink]="['/frozen']" expand="block" class="frozen" color="success" size="large">Frozen Foods</ion-button>
+        <ion-button [routerLink]="['/cereal-muesli']" expand="block" class="cm" color="success" size="large">Cereal/Muesli
+          <ion-icon name="reader-outline"></ion-icon>
+        </ion-button>
+        <ion-button [routerLink]="['/frozen']" expand="block" class="frozen" color="success" size="large">Frozen Foods
+          <ion-icon name="snow-outline"></ion-icon>
+        </ion-button>
     </ion-row>
 
     <ion-col></ion-col>
 
     <ion-row>
-        <ion-button [routerLink]="['/misc-other']" expand="block" class="misc" color="tertiary" size="large">Misc/Other</ion-button>
+        <ion-button [routerLink]="['/misc-other']" expand="block" class="misc" color="tertiary" size="large">Misc/Other
+          <ion-icon name="cafe-outline"></ion-icon>
+        </ion-button>
     </ion-row>
 
     <ion-col></ion-col>

@@ -1,8 +1,5 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
     <ion-img src="..\assets\icon\AF-Date-Control.png"></ion-img>
   </ion-toolbar>
 </ion-header>
@@ -21,8 +18,24 @@
 
     <ion-row>
       <ion-col> 
-      <ion-button type="submit" (click)="signUp(email, password)" expand="block" color="success">Register</ion-button>
+      <ion-button type="submit" (click)="signUp(email, password)" shape="round" color="success">Register</ion-button>
       </ion-col>
     </ion-row>
   </form>
+
+  <ion-row>
+    <ion-col> 
+      <p>Already Have An Account ? </p>
+      <ion-button [routerLink]="['/login']" shape="round" color="danger">Log In</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col> 
+      <ion-button [routerLink]="['/home']" shape="round" color="dark">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
 </ion-content>
