@@ -41,14 +41,18 @@
 
       <ion-row>
         <ion-col>
-          <ion-button type="submit" color="success" shape="full" expand="block">Update</ion-button>
+          <ion-button type="submit" color="success" shape="round">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+          </ion-button>
         </ion-col>
       </ion-row>
     </form>
 
     <ion-row>
       <ion-col>
-        <ion-button [routerLink]="['/biscuits-cakes']" expand="block" color="dark">Go Back</ion-button>
+        <ion-button [routerLink]="['/biscuits-cakes']" shape="round" color="dark">
+          <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
     

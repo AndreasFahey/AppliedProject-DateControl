@@ -8,9 +8,13 @@
   <ion-grid>
       <ion-col class="ion-align-self-center">
         <span class="already">Welcome, Please Sign In or Register as New Staff Member</span>
-        <ion-button [routerLink]="['/login']" shape ="round" expand="block" color="success">Staff Sign In</ion-button>
+        <ion-button [routerLink]="['/login']" shape ="round" expand="block" color="success">Staff Sign In&nbsp;&nbsp;
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-button>
         <span class="divider line one-line">or</span>
-        <ion-button [routerLink]="['/registration']" shape ="round" expand="block" color="primary">Register As New Staff Member</ion-button>
+        <ion-button [routerLink]="['/registration']" shape ="round" expand="block" color="primary">Register As New Staff Member&nbsp;&nbsp;
+          <ion-icon name="person-add-outline"></ion-icon>
+        </ion-button>
       </ion-col>
   </ion-grid>
 </ion-content>
