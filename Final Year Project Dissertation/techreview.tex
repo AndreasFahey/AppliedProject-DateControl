@@ -1,5 +1,12 @@
 \chapter{Technology Review}
 
+\begin{figure}[h!]
+	\caption{AF Date Control Logo}
+	\label{image:AF-Date-Control}
+	\centering
+	\includegraphics[width=0.55\textwidth]{images/AF-Date-Control.png}
+\end{figure}
+
 \subsection{The How and Why}
 \begin{figure}[h!]
 	\caption{Quotation From: https://www.brainyquote.com/}
@@ -34,42 +41,61 @@ Here are some images on the permission of my superiors of the CBE Database syste
 	\caption{CBE's System in my workplace 1:}
 	\label{image:mace1}
 	\centering
-	\includegraphics[width=0.3\textwidth]{images/mace1.PNG}
+	\includegraphics[width=0.25\textwidth]{images/mace1.PNG}
 \end{figure}
 
 \begin{figure}[h!]
 	\caption{CBE's System in my workplace 2:}
 	\label{image:mace2}
 	\centering
-	\includegraphics[width=0.3\textwidth]{images/mace2.PNG}
+	\includegraphics[width=0.25\textwidth]{images/mace2.PNG}
 \end{figure}
 
 \begin{figure}[h!]
 	\caption{CBE's System in my workplace 3:}
 	\label{image:mace3}
 	\centering
-	\includegraphics[width=0.3\textwidth]{images/mace3.PNG}
+	\includegraphics[width=0.25\textwidth]{images/mace3.PNG}
 \end{figure}
 
 \begin{figure}[h!]
 	\caption{CBE's System in my workplace 4:}
 	\label{image:mace4}
 	\centering
-	\includegraphics[width=0.3\textwidth]{images/mace4.PNG}
+	\includegraphics[width=0.25\textwidth]{images/mace4.PNG}
 \end{figure}
 
 \begin{figure}[h!]
 	\caption{CBE's System in my workplace 5:}
 	\label{image:mace5}
 	\centering
-	\includegraphics[width=0.3\textwidth]{images/mace5.PNG}
+	\includegraphics[width=0.25\textwidth]{images/mace5.PNG}
 \end{figure}
-\newpage
+
 As you can see in the images above, this is an example taken from the shop i work in. The system provided by CBE that gives reports, wastage, returns details and so on. You can also enter in the delivery dockets here to keep track of your stock but what i am trying to implement is not here. As humans we are expected to find the products that are close or past their sell by date, customers may have a better eye than us and find products that we missed and purchase them deeming them ineffective or dangerous for consumption. My application helps address this existing issue and prevents customer harm and helps the retailers save money and being able to act quickly. To conclude i do believe this application is beneficial and sufficient and based on the survey results my fellow staff members and superiors also think so. 
 
 \subsection{Surveys \& Results}
 
-\subsection{Planning Project}
+\subsection{Planning The Project}
+The Planning of this project took place in the first semester for final year where we were told who our project supervisors would be. Once we were told who our supervisors would be i agreed to meet with my supervisor once a week. I am in full support of the provision of supervisors for the Applied Project and Minor Dissertation as it benefited me hugely in the planning of this project. 
+\newline
+
+For the first couple of weeks i came to my supervisor with a few different ideas. One of them was this Date Control Application i ended up developing. The other two was to make a more sufficient and more operational version of the group project i contributed to in third year which was an ionic firebase application and a game in C Sharp. The Date Control Application stood out from the offset and the weeks that followed. After many discussions in person and via email i decided to take up this project as my final year project. When this was decided i needed to decide what technology i was going to use and needed to find out has it been done before or similar. 
+\newline
+
+After thorough research on the topic i came to the conclusion that this type of application was not done before or if it was it was done by someone as a minor or private application. I discussed the prospect of introducing this idea to CBE once near completion as i felt not only would it benefit retail it would benefit a company that provides shops with their tills and store databases of stock to potentially link my application in some form to their system to save them time and money and even gain customers through this latest potential technology. 
+\newline
+
+I also got in touch with my colleagues and superiors at my workplace to get their view on the idea of using an application to help them get stock before it's sell by date and take action and catch everything in the store, be it shop floor stock or back stock where the human eye may not catch. Knowing from experience this is an existing issue, i have missed products in the shop that my colleague might find the next day. I conducted a mini survey within the workplace and put the results in a graph which you will see in the system evaluation section of this write up. 
+\newline
+
+The next phase of planning was to decide on what technology i was to use to develop this program. Due to the experience of using Firebase for the first time in third year i made the easy decision to go with Firebase as a database host for my project. Having done Ionic Firebase in third year for the end of year group project there i wanted to give something else a go. So i decided to go with Angular Firebase. Lucky enough for me there is a range of different tutorials on Angular Firebase. I made this decision over the Christmas holidays where i decided on the language choice and started sketching some ideas of how i wanted the application to look and what pages/components i wanted to implement into the project. 
+\newline
+
+I wanted to implement some elements to my application that may not be present in a CBE add on application or store application. User Authentication was one element that i implemented for thesis purposes that would maybe not be on a CBE application for various reasons such as time for the staff member to register an account or sign into an account, this applications purpose is to save time for staff not hinder them. Also i wanted to implement a product details form due to the limitation of not having a shops database at my disposal, this is included in this application to indicate the purpose of the application. To show product details and when their best before date is. So in terms of a real life situation, User Authentication and a product form wouldn't need to be required for the purpose of this idea. 
+\newline
+
+The plan to use Angular Firebase had to change in the early stages of software development for this project. I decided to switch to ionic firebase. There are various similarities between angular and ionic but i felt more comfortable with ionic than i did angular and not to mention i liked the end product of an ionic application rather than angular. Thankfully i changed the plan at the early stage of development.
 
 \subsection{Technologies}
 The Technologies i used to develop my idea were as follows:
@@ -82,7 +108,9 @@ The Technologies i used to develop my idea were as follows:
 	\includegraphics[width=0.4\textwidth]{images/vscode.png}
 \end{figure}
 
-- Visual Studio Code - The IDE of my choice for coding the project.
+- Visual Studio Code - The Editor of my choice for coding the project.
+\newline
+Whenever we received a project from a lecturer, my initial thought was would i be able to develop this project in Visual Studio Code. Out of all the editors we used throughout the four years of study this stands out as my favourite. It is so easy to use and having using it for past projects and the Ionic Firebase project from third year i had no other editor in mind but Visual Studio Code. I like the file views and the smoothness of the editor when developing a program. To develop this project i would open a command prompt inside my project repository directory and type "code ." and it would open up my project in Visual Studio Code. I could do this with any project. I understand it is the more favoured editor among my peers. 
 \newline
 
 \begin{figure}[h!]
@@ -107,8 +135,15 @@ Out of the four years of studying software development, Ionic and Angular stood 
 	\includegraphics[width=0.5\textwidth]{images/fire-base.png}
 \end{figure}
 
-- Firebase - The Cloud Database i used to store User Authentication details and store the product entry data for crud functionality. Note for private and security purposes i the admin of the Firebase database cannot see what the users passwords are, firebase hash them in which i or anyone else does not know.
+- Firebase - The Cloud Database i used to store User Authentication details and store the product entry data for crud functionality. Note for private and security purposes i the admin of the Firebase database cannot see what the users passwords are, firebase hash them in which i or anyone else does not know. Within visual studio code in my software development to connect my firebase database project made on firebase i had to implement unique firebase configuration values to my environments files. It should look something like this if you were to ever take up a project with firebase.   
 \newline
+
+\begin{figure}[h!]
+	\caption{Example of Firebase Configuration:}
+	\label{image:firebaseConfig}
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/firebaseConfig.jpg}
+\end{figure}
 
 \begin{figure}[h!]
 	\caption{All Project Items are on GitHub and can be cloned.}
