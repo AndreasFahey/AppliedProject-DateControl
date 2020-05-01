@@ -16,6 +16,8 @@ export class RegistrationPage implements OnInit {
   ngOnInit() {
   }
 
+  // Register Staff Member front end function
+  // Inherrited from shared backend authentication service
   signUp(email, password){
     this.authService.RegisterUser(email.value, password.value)
     .then((res) => {

@@ -17,6 +17,8 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  // Front End log in function
+  // Inherrited from shared backend authentication service 
   logIn(email, password) {
     this.authService.SignIn(email.value, password.value)
       .then((res) => {

@@ -30,17 +30,17 @@ export class AuthenticationService {
     })
   }
 
-  // Login in with email/password
+  // Login staff member with Email & Password
   SignIn(email, password) {
     return this.ngFireAuth.auth.signInWithEmailAndPassword(email, password)
   }
 
-  // Register user with email/password
+  // Register Staff Member with Email & Password
   RegisterUser(email, password) {
     return this.ngFireAuth.auth.createUserWithEmailAndPassword(email, password)
   }
 
-  // Email verification when new user register
+  // Email verification sent to staff members email
   SendVerificationMail() {
     return this.ngFireAuth.auth.currentUser.sendEmailVerification()
     .then(() => {
@@ -59,13 +59,13 @@ export class AuthenticationService {
     })
   }
   
-  // Returns true when user is logged in
+  // Returns true when staff member is logged in
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     return (user !== null && user.emailVerified !== false) ? true : false;
   }
 
-  // Returns true when user's email is verified
+  // Returns true when staff members email is verified
   get isEmailVerified(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     return (user.emailVerified !== false) ? true : false;
@@ -84,7 +84,7 @@ export class AuthenticationService {
     })
   }
 
-  // Store user in localStorage
+  // Store Staff Member
   SetUserData(user) {
     const userRef: AngularFirestoreDocument<any> = this.afStore.doc(`users/${user.uid}`);
     const userData: User = {
@@ -97,7 +97,7 @@ export class AuthenticationService {
     })
   }
 
-  // Sign-out 
+  // Log Out Staff Member 
   SignOut() {
     return this.ngFireAuth.auth.signOut().then(() => {
       localStorage.removeItem('user');
