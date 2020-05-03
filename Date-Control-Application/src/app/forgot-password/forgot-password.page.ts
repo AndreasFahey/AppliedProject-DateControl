@@ -17,6 +17,7 @@ export class ForgotPasswordPage implements OnInit {
   }
 
   // ***********Not Working**********
+  /*
   sendPasswordResetEmail(email){
     this.authService.PasswordReset(email)
     .then((res) => {
@@ -26,5 +27,5 @@ export class ForgotPasswordPage implements OnInit {
       window.alert(error.message)
     })
 }
-
+*/
 }
